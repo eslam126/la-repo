@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+
+header {
+            padding: 6px;
+            text-align: center;
+            background: #f3f705;
+            color: white;
+            font-size: 30px;
+        }
+/*--------------------------------------nav/*********************************/
+nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #111;
+        }
+
+/* Create two columns/boxes that floats next to each other */
+aside {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: rgb(68, 67, 67);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #2b2929;
+  height: 300px; /* only for demonstration, should be removed */
+}
+#disk_c{
+            width: 300px;
+            align-items: left   ;
+        }
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        footer li {
+            float: left;
+text-align: justify;        }
+
+        footer li a {
+            display: block;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        footer li a:hover {
+            background-color: #111;
+        }
+
+    span{
+        align-items: center;
+    }
+</style>
+</head>
+<body>
+
+
+
+<header>
+    <div>  <h2 style="color: black;">National Geographic</h2> 
+        <img src="https://609528.smushcdn.com/606234/wp-content/uploads/2020/01/National-Geographic-logo.jpg?lossy=1&strip=1&webp=1" alt="Nat Geo" width="150" height="100">
+    
+
+    </div>
+
+</header>
+<div>
+    <nav>
+
+        <ul class="nav1">
+            <li class="nav1"><a class="active" href="#home">Home</a></li>
+            <li class="nav1"><a href="#news">News</a></li>
+            <li class="nav1"><a href="#contact">Contact</a></li>
+            <li class="nav1"><a href="#about">About</a></li>
+        </ul>
+    </nav>
+</div>
+<section>
+  <aside>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+    <p><h3 style="color: darkgoldenrod;">Take the action</h3>
+    </p>
+    <p style="color: aliceblue;">live the adventure <time>10:00</time> to <time>21:00</time> every weekday.</p>
+    
+    <p style="color: aliceblue;">be on a date <time datetime="2021-02-15 20:00">The wild  day</time>.</p>
+    <label for="disk_c" style="color: aliceblue;"> Reload it:</label>
+<p><meter id="disk_c" value="10" min="0" max="10" >2 out of 10</meter>
+</p><br>
+  </aside>
+  
+  <article>
+    <h1 style="color: bisque;">The wild</h1>
+    <p style="color: bisque;">National Geographic is an American pay television network and flagship channel owned by National Geographic Partners, a joint venture between The Walt Disney Company and the National Geographic Society, with the operational management handled by Walt Disney Television. </p>
+  </article>
+</section>
+
+<footer>
+<footer>
+        <ul >
+            <span></span>
+            <li class="selected"><a href="#">Blog</a></li>
+        </span>
+            <span>
+            <li><a href="#">Archives</a></li>
+            </span>
+            
+        </ul>
+    </footer>
+
+</body>
+</html>
